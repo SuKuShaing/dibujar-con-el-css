@@ -1,0 +1,29 @@
+body {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+
+}
+.contenedor-seba {
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+
+.contenedor-seba img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.contenedor-seba .logo {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
