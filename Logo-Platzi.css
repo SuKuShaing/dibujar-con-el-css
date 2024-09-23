@@ -5,8 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-
+    box-sizing: border-box;
 }
+
 .contenedor-seba {
     width: 400px;
     height: 400px;
@@ -21,9 +22,55 @@ body {
 .contenedor-seba img {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    /* z-index: -1; */
 }
 
-.contenedor-seba .logo {
+.contenedor-seba .logo_css {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    position: relative;
+}
+
+.logo_css .verde_grande {
+    width: 207.7px;
+    height: 208px;
+    background-color: #0ae98a;
+    /* background-color: rgba(255, 0, 0, 0.4); */
+    transform: translateX(14.7px) translateY(0px) rotate(45deg);
+    border-radius: 39px;
+}
+
+.logo_css .blanco_externo {
+    position: absolute;
+    top: 0;
+    width: 208px;
+    height: 208px;
+    background-color: #fff;
+    /* background-color: rgba(0, 0, 255, 0.5); */
+    clip-path: polygon(79.7% 58.8%, 100% 58.7%, 100% 0%, 51% -2%, 51% 19%, 78.8% 19%);
+    transform: translateX(15.7px) translateY(0px) rotate(45deg);
+}
+
+.logo_css .esquina_verde_chica {
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* background-color: #000; */
+    background-color: #0ae98a;
+    /* background-color: rgba(255, 0, 0, 0.4); */
+    width: 100px;
+    height: 100px;
+    transform: rotate(45deg) translateX(23px) translateY(11.6px);
+    border-radius: 0 39px 0 0;
+    clip-path: polygon(0 0.5%, 100% 0, 99.4% 100%, 0% 100%);
+}
+
+.logo_css .blanco_interno {
+    position: absolute;
+    top: 0;
+    width: 208px;
+    height: 208px;
+    background-color: #fff;
+    clip-path: polygon(19.5% 19.7%, 60.2% 19.9%, 60% 58.4%, 80.1% 58.6%, 80.1% 80.3%, 19.8% 80.2%);
+    transform: translateX(14.7px) translateY(0px) rotate(45deg);
 }
