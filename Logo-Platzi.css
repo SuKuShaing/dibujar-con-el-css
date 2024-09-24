@@ -9,20 +9,14 @@ body {
 }
 
 .contenedor-seba {
-    width: 400px;
-    height: 400px;
+    width: 300px;    /* Tamaño del contenedor */
+    height: 300px;    /* Tamaño del contenedor */
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     display: grid;
     place-items: center;
     grid-template-columns: 1fr;
-}
-
-.contenedor-seba img {
-    grid-column: 1 / 2;
-    grid-row: 1 / 2;
-    /* z-index: -1; */
 }
 
 .contenedor-seba .logo_css {
@@ -47,7 +41,7 @@ body {
     height: 208px;
     background-color: #fff;
     /* background-color: rgba(0, 0, 255, 0.5); */
-    clip-path: polygon(79.7% 58.8%, 100% 58.7%, 100% 0%, 51% -2%, 51% 19%, 78.8% 19%);
+    clip-path: polygon(79.7% 58.8%, 100% 58.7%, 118% 25%, 90% 0%, 51% -2%, 51% 19%, 78.8% 19%);
     transform: translateX(15.7px) translateY(0px) rotate(45deg);
 }
 
